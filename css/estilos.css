@@ -3,11 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: 2em 3em;
+  padding: 2em 2.5em;
   font-family: "Inter", sans-serif;
-  height: 100vh; }
+  height: 100vh;
+  max-width: 400px; }
   .container-registro h4 {
     color: #A28A67;
+    margin-top: 2rem;
     padding: .5em; }
   .container-registro .info-email {
     color: #DADADA;
@@ -20,6 +22,8 @@
     padding: .7em;
     width: 100%;
     margin-bottom: 1em; }
+  .container-registro input:focus {
+    box-shadow: 0px 0px 20px #d7a3703c; }
   .container-registro .enter-email {
     border-radius: 6px;
     outline: none;
@@ -28,7 +32,10 @@
     width: 100%;
     background-color: #A28A67;
     color: #DADADA;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.3s; }
+  .container-registro .enter-email:hover {
+    box-shadow: 0px 0px 20px #d7a3703c; }
   .container-registro .divisor-container {
     padding: 1em 0;
     display: flex;
@@ -52,9 +59,12 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.3s; }
     .container-registro .enter-google img {
       margin-right: .7em; }
+  .container-registro .enter-google:hover {
+    box-shadow: 0px 0px 20px #d7a3703c; }
   .container-registro .terminos {
     color: #828282;
     font-size: .7em;
